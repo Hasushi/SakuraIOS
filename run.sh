@@ -1,8 +1,8 @@
 #!/bin/bash
 set -xue
 
-# QEMU のファイルパス
+# QEMUのファイルパス
 QEMU=qemu-system-riscv32
 
-# QEMU を起動
-$QEMU -machine virt -bios default -nograghic mon:stdio --no-reboot
+# QEMUを起動
+$QEMU -machine virt -bios default -nographic -serial mon:stdio --no-reboot
